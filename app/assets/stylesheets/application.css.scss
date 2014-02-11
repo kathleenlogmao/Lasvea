@@ -9,7 +9,29 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require header
  */
 
 @import "bootstrap";
+
+#content {
+  background-color: white;
+
+}
+
+#navigation {
+
+}
+
+#footer {
+  height: 20px;
+  background-color: #FADAED;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #FADAED -webkit-gradient(linear, left top, left bottom, from(#FADCDA), to(#FADAED)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #FADAED -moz-linear-gradient(top, #FADCDA, #FADAED) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FADCDA, endColorstr=#FADAED) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FADCDA, endColorstr=#FADCDA)" no-repeat;
+}
