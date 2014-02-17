@@ -9,7 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require header
+ *= require style
  */
 
 @import "bootstrap";
@@ -18,3 +19,54 @@
   height: 150px;
   border: 1px solid #e2e2e2;
 }
+
+#content {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-top: -30px;
+}
+
+
+#navigation {
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-align:  center;
+  text-decoration: none;
+  ul {
+    height: auto;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    margin-top: -150px;
+    margin-left: 600px;
+
+  }
+
+  li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  a {
+    color: #fff;
+    padding-bottom: 5px;
+  }
+
+  a:hover {
+    color: black;
+    
+    text-decoration: none;
+  }
+}
+
+
+#footer {
+height: 100px;
+background-image: url('bottom.png');
+padding-top: 25px;
+text-align: center;
+}
+
