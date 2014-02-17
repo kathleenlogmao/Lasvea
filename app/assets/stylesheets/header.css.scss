@@ -1,31 +1,27 @@
 .header {
- width: 100%;
-margin-top: 40px;
-height: 200px;
-background: url('ribbon3.png') top center;
-background-repeat: repeat-x;
-
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background: url('ribbon3.png') top center;
+  background-repeat: repeat-x;
+  text-align: left;
   img {
     width: 200px;
     height: 150px;
-    margin-left: 40px;
     margin-top: -42px;
   }
-
 }
 
 
 body {
- font-family: 'Arvo',georgia,serif;
- background-color: white;
-background-image: url('bg.jpg');
+  background-color: white;
+  background-image: url('bg.jpg');
 
 }
 
 .border-bumps {
   background-image: url('curl.jpg');
   background-repeat:repeat-x;
-
 }
 
 

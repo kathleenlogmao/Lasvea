@@ -11,9 +11,16 @@
  *= require_self
  *= require header
  *= require style
+ *= require navigation
+ *= require catalogues
  */
 
 @import "bootstrap";
+
+.landing-sub {
+  height: 150px;
+  border: 1px solid #e2e2e2;
+}
 
 #content {
   background-color: white;
@@ -56,8 +63,7 @@
     
     text-decoration: none;
   }
-
-      margin-top: -30px;
+  margin-bottom: 40px;
 }
 
 

@@ -1,0 +1,25 @@
+#navigation {
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-align:  left;
+  margin-top: 17px;
+  margin-left: -10px;
+  text-decoration: none;
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: yellow;
+    }
+  }
+}
+

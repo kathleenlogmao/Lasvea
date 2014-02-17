@@ -3,4 +3,6 @@ Lasvea::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   root to: "pages#index"
+
+  get "/catalogue", to: "pages#catalogue", as: :catalogue
 end
