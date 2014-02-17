@@ -1,8 +1,16 @@
-<% @categories.each_slice(4) do |slice| %>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Catalogue</h2>
+    <hr>
+  </div>
+</div>
+<% @categories.each_slice(3) do |slice| %>
   <div class="row">
     <% slice.each do |category| %>
-      <div class="col-md-3">
-        <%= category.name %>
+      <div class="col-md-4">
+        <div class="catalogue-item">
+          <%= category.name %>
+        </div>
       </div>
     <% end %>
   </div>

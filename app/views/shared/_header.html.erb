@@ -1,5 +1,12 @@
 <div class="header"> 
-<%= image_tag("lasvea.png") %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 left">
+        <%= link_to image_tag("lasvea.png"), root_path %>
+      </div>
+      <div class="col-md-6">
+        <%= render partial: "shared/navigation" %>
+      </div>
+    </div>
+  </div>
 </div>
-
-
