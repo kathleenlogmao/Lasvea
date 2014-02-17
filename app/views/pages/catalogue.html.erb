@@ -1,0 +1,9 @@
+<% @categories.each_slice(4) do |slice| %>
+  <div class="row">
+    <% slice.each do |category| %>
+      <div class="col-md-3">
+        <%= category.name %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
