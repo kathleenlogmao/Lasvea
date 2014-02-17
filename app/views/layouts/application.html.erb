@@ -5,11 +5,20 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "1059b8ca-c7b4-4779-b637-d324d213f655", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  
 </head>
 <body>
 <%= render partial: "shared/header" %>
 <%= render partial: "shared/navigation" %>
 <div class="container" id="content">
+
 <%= yield %>
 </div>
 

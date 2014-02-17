@@ -1,21 +1,23 @@
 .header {
-    background-color: #FADAED;
-    /* For WebKit (Safari, Chrome, etc) */
-    background: #FADAED -webkit-gradient(linear, left top, left bottom, from(#FADCDA), to(#FADAED)) no-repeat;
-    /* Mozilla,Firefox/Gecko */
-    background: #FADAED -moz-linear-gradient(top, #FADCDA, #FADAED) no-repeat;
-    /* IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FADCDA, endColorstr=#FADAED) no-repeat;
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FADCDA, endColorstr=#FADCDA)" no-repeat;
-    height: 130px;
+ width: 100%;
+margin-top: 0px;
+height: 200px;
+background: url('top.png') top center;
+background-repeat: repeat-x;
+
+  img {
+    width: 250px;
+    height: 120px;
+    margin-left: 40px;
+  }
 
 }
 
 
 body {
-  background-image: url('bg.jpg');
-  background-position: center;
+ font-family: 'Arvo',georgia,serif;
+ background-color: white;
+background-image: url('stripes.png');
 
 }
 
@@ -24,6 +26,8 @@ body {
   background-repeat:repeat-x;
 
 }
+
+
 
 
 
