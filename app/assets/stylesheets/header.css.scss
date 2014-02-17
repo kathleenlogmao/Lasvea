@@ -1,14 +1,15 @@
 .header {
  width: 100%;
-margin-top: 0px;
+margin-top: 40px;
 height: 200px;
-background: url('top.png') top center;
+background: url('ribbon3.png') top center;
 background-repeat: repeat-x;
 
   img {
-    width: 250px;
-    height: 120px;
+    width: 200px;
+    height: 150px;
     margin-left: 40px;
+    margin-top: -42px;
   }
 
 }
@@ -17,7 +18,7 @@ background-repeat: repeat-x;
 body {
  font-family: 'Arvo',georgia,serif;
  background-color: white;
-background-image: url('stripes.png');
+background-image: url('bg.jpg');
 
 }
 
