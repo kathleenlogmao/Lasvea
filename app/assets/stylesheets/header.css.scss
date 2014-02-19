@@ -1,8 +1,7 @@
 .header {
-  width: 100%;
   margin-top: 40px;
   margin-bottom: 10px;
-  background: url('ribbon3.png') top center;
+  font-family: 'Allura', cursive;
   background-repeat: repeat-x;
   text-align: left;
   img {
@@ -10,13 +9,13 @@
     height: 150px;
     margin-top: -42px;
   }
+  color: black;
 }
 
 
 body {
   background-color: white;
-  background-image: url('bg.jpg');
-
+ 
 }
 
 .border-bumps {

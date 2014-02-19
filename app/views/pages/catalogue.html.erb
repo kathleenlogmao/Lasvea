@@ -1,17 +1,18 @@
 <div class="row">
-  <div class="col-md-12">
-    <h2>Catalogue</h2>
-    <hr>
-  </div>
+
+  <div class="col-md-12 category">Categories</div>
+  <hr>
 </div>
-<% @categories.each_slice(3) do |slice| %>
+
+<% @categories.each_slice(4) do |slice| %>
   <div class="row">
     <% slice.each do |category| %>
-      <div class="col-md-4">
-        <div class="catalogue-item">
+       <div class="col-md-3 preview">
+      <%= image_tag("slide1.jpg") %>
+        <p class="description content">
           <%= category.name %>
-        </div>
-      </div>
+        </p>
+    </div>
     <% end %>
   </div>
 <% end %>
