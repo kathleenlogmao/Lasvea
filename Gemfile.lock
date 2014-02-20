@@ -65,6 +65,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    colorbox-rails (0.1.0)
+      jquery-rails
+      rails (>= 3.1.1)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -176,6 +179,7 @@ DEPENDENCIES
   activeadmin!
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  colorbox-rails
   devise
   jbuilder (~> 1.2)
   jquery-rails
