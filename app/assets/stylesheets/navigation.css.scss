@@ -1,12 +1,15 @@
 #navigation {
-  font-size: 20px;
+  font-size: 30px;
   padding-bottom: 20px;
-  text-align:  left;
-  margin-top: 17px;
-  margin-left: -10px;
+  text-align: center;
+  margin-top: 18px;
   text-decoration: none;
+  margin-left: -30px;
+
   ul {
-    list-style-type: none;
+    list-style-type:none;
+margin:0;
+padding:0;
   }
 
   li {
@@ -15,11 +18,13 @@
     margin-right: 10px;
     text-decoration: none;
     a {
-      color: #fff;
+      color: #27aae1;
     }
     a:hover {
-      color: yellow;
+      color: orange;
     }
   }
+
+  color: black;
 }
 
