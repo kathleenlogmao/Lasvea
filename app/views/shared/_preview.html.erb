@@ -7,18 +7,9 @@
   <% @products.each_slice(4) do |products| %>
     <div class="row">
       <% products.each do |product|%>
-        <%= link_to(product_path(product.id), data: { colorbox: true }) do %>
-          <div class="col-md-3">
-            <div class="product">
-              <div class="product-image">
-                <%= image_tag product.picture.url(:medium) %>
-              </div>
-              <div class="product-name">
-                <%= product.pname %>
-              </div>
-            </div>
-          </div>
-        <% end %>
+        <div class="col-md-3">
+          <%= render partial: "products/preview", locals: { product: product } %>
+        </div>
       <% end %>
     </div>
   <% end %>

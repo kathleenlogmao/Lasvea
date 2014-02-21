@@ -12,6 +12,16 @@
   <script type="text/javascript">var switchTo5x=true;</script>
   <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
   <script type="text/javascript">stLight.options({publisher: "1059b8ca-c7b4-4779-b637-d324d213f655", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $(".product-image").magnificPopup({
+      delegate: 'a',
+      type: 'image'
+    });
+  });
+  </script>
+
+
   <link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -24,3 +34,4 @@
 </body>
 <%= render partial: "shared/footer" %>
 </html>
+

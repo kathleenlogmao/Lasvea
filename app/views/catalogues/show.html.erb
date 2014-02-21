@@ -1,22 +1,16 @@
 <div class="row cat">
   <div class="col-md-12 cat-name">
     <h1><%= @category.name %></h1>
+    <p><%= @category.description %></p>
   <hr>
   </div>
 </div>
 <% @products.each_slice(3) do |products| %>
   <div class="row">
     <% products.each do |product|%>
-      <%= link_to(product_path(product.id), data: { colorbox: true }) do %>
+      <%= link_to(product_path(product.id)) do %>
         <div class="col-md-4">
-          <div class="product">
-            <div class="product-image">
-              <%= image_tag product.picture.url(:medium) %>
-            </div>
-            <div class="product-name">
-              <%= product.pname %>
-            </div>
-          </div>
+          <%= render partial: "products/preview", locals: { product: product } %>
         </div>
       <% end %>
     <% end %>
