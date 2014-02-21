@@ -1,0 +1,8 @@
+<div class="product">
+  <div class="product-image">
+    <%= link_to(image_tag(product.picture.url(:medium)), product.picture.url(:large)) %>
+  </div>
+  <div class="product-name">
+    <%= product.pname %>
+  </div>
+</div>
