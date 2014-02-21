@@ -1,14 +1,21 @@
 .header {
-  margin-top: 40px;
+  background-color: #e2e2e2;
   font-family: 'Allura', cursive;
   background-repeat: repeat-x;
   text-align: left;
   img {
     width: 200px;
     height: 150px;
-    margin-top: -42px;
+    margin-top: -35px;
   }
   color: black;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  border-bottom: 1px solid #27aae1;
+}
+
+.header-inner {
+  margin-top: 20px;
 }
 
 
