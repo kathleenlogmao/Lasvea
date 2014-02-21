@@ -6,4 +6,12 @@ class PagesController < ApplicationController
   def catalogue
     @categories = Category.all
   end
+
+  def about
+
+  end
+
+   def contact
+
+  end
 end
