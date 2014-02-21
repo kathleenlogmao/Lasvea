@@ -8,4 +8,5 @@ Lasvea::Application.routes.draw do
   get "/catalogue/:id/products", to: "catalogues#show", as: :catalogue_show
   get "/products/:id", to: "products#show", as: :product
   get "/about", to: "pages#about", as: :about
+  get "/contact", to: "pages#contact", as: :contact
 end
