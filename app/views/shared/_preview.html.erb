@@ -1,29 +1,25 @@
-<div class="row category_preview">
-<div class="col-md-12 category">Categories</div>
-  <% 4.times do %>
-    <div class="col-md-3 preview">
-      <%= image_tag("slide1.jpg") %>
-        <p class="description content">
-         Animals
-      
-        </p>
+<div class="row" id="featured-products">
+  <div class="col-md-12">
+    <h1 class="title">Featured Products</h1> 
+  </div>
+  <div class="col-md-12">
+  </div>
+  <% @products.each_slice(4) do |products| %>
+    <div class="row">
+      <% products.each do |product|%>
+        <%= link_to(product_path(product.id), data: { colorbox: true }) do %>
+          <div class="col-md-3">
+            <div class="product">
+              <div class="product-image">
+                <%= image_tag product.picture.url(:medium) %>
+              </div>
+              <div class="product-name">
+                <%= product.pname %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
     </div>
   <% end %>
 </div>
-
-<div class="row product_preview">
-<div class="col-md-12 category">Products</div>
-  <% 4.times do %>
-    <div class="col-md-3 preview">
-      <%= image_tag("slide1.jpg") %>
-        <p class="description_content_product">
-          Cupcake yu789<br>
-          <b>Local Price:</b> P100.00 <br>
-          <b>International Price: </b>$4.50 
-        </p>
-    </div>
-  <% end %>
-</div>
-
-
-  
