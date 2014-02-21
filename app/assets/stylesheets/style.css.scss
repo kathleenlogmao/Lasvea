@@ -205,8 +205,6 @@ padding-top: 10px;
 
 
 .preview_cat {
-  margin-right: 10px;
-
   img {
     width: 220px;
     height: auto;
@@ -238,12 +236,10 @@ padding-top: 10px;
       margin:0px;  
 
   }  
-  margin-left: -15px;
-  padding-left: 50px;
 }
 
 .cat { 
-margin-top: -16px;
+  margin-top: -16px;
 }
 
 .row {
@@ -276,6 +272,7 @@ margin-top: -16px;
 
 .postit {
   margin-top: 20px;
+  margin-left: 30px;
   *{
  
 }
@@ -319,7 +316,13 @@ body{
 
 }
 
-
+.contact {
+  background-color: white;
+  border: solid 1px #e2e2e2;
+  padding: 10px;
+  background-color: #27aae1;
+  margin-bottom: 10px;
+}
 
 
 

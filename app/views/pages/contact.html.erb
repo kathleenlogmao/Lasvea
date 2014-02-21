@@ -1,11 +1,15 @@
 <div class="row">
-<div class="col-md-7 contact">
-  
-  
-</div>
+  <div class="col-md-7 contact">
+    <%= simple_form_for(:contact_info, url: "/contact_post", method: :post, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :email %>
+      <%= f.input :contact_number %>
+      <%= f.input :message, as: :text %>
+      <%= f.submit "Send", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 
-<div class="col-md-5 postit">
-
+  <div class="col-md-5 postit">
   <div class=""><b>E-mail:</b> <br>lasvea2014@email.com </div> <br>
   <div class=""><b>Telephone:</b> <br>783-61-70 </div> <br>
   <div class=""><b>Address:</b><br> #750 Dos Castillas Sampaloc Manila </div>
