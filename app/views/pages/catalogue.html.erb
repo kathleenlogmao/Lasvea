@@ -7,7 +7,7 @@
 <% @categories.each_slice(4) do |slice| %>
   <div class="row">
     <% slice.each do |category| %>
-      <div class="col-md-3 preview">
+      <div class="col-md-3 preview_cat">
         <%= image_tag("slide1.jpg") %>
         <p class="description content">
           <%= link_to category.name, catalogue_show_path(category.id) %>

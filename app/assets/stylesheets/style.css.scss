@@ -71,8 +71,8 @@
  color: #ff2800;
  text-align: center;
  img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
  
  }
 }
@@ -96,7 +96,7 @@ height:90px;
   font-family: Arial;
   font-weight: bold;
   color: orange;
-  margin-top: -10px;
+  margin-top: -5px;
   text-align: left;
 
   p {
@@ -136,6 +136,8 @@ background-repeat: repeat-x;
   width: 220px;
   height: auto;
  
+
+  color: black; 
   }
 
   margin-top: 10px;
@@ -143,29 +145,31 @@ background-repeat: repeat-x;
 
 .description{  
     left:0px;    
-    background-color: #0066FF;  
+    background-color: #0099FF;
     font-size:20px;  
-    color:white;  
-    opacity:0.4; 
+    color: black;  
+    opacity:0.6; 
     filter:alpha(opacity=60); 
     font-family: Aspire;
     width: 220px;
     
     margin-top: -27px;
     text-align: left;
-    padding-left: 10px;
+  
 }  
 p.description_content{  
     padding:10px;  
     margin:0px;  
+
 }  
-margin-left: -15px;
+
 }
 
 .category {
 font-family: 'Allura', cursive;
 font-size: 30px;
 color: #27aae1;
+margin-top: -16px;
 }
 
 .products {
@@ -175,18 +179,16 @@ color: #27aae1;
 }
 
 .category_preview {
-  padding-left: 50px;
-
   .category {
- 
+    margin-left: 17px;
   }
+ 
 }
 
 .product_preview {
-  padding-left: 50px;
-
-  .category {
-  
+padding-top: 10px;
+.category {
+    margin-left: 17px;
   }
 }
 
@@ -205,5 +207,55 @@ color: #27aae1;
 .catalogue {
   font-family: 'Allura', cursive;
 }
+
+
+.preview_cat{
+  img {
+  width: 220px;
+  height: auto;
+ 
+
+  color: black; 
+  }
+
+  margin-top: 10px;
+  text-align: center;
+
+.description{  
+    left:0px;    
+    background-color: #0099FF; 
+    font-size:20px;   
+    opacity:0.6; 
+    filter:alpha(opacity=60); 
+    font-family: Aspire;
+    width: 220px;
+    
+    margin-top: -27px;
+    text-align: left;
+    padding-left: 10px;
+}  
+
+a {
+  color: black;
+}
+p.description_content{  
+    padding:10px;  
+    margin:0px;  
+
+}  
+margin-left: -15px;
+padding-left: 50px;
+}
+
+.cat { 
+margin-top: -16px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
 
 
