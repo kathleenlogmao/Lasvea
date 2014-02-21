@@ -111,6 +111,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -189,6 +190,7 @@ DEPENDENCIES
   jquery-rails
   magnific-popup-rails
   paperclip
+  pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
