@@ -9,7 +9,7 @@
   <div class="row">
     <% slice.each do |category| %>
       <div class="col-md-3 preview_cat">
-        <%= image_tag("slide1.jpg") %>
+        <%= image_tag(category.banner.url(:medium), size: "250x150") %>
         <p class="description content">
           <%= link_to category.name, catalogue_show_path(category.id) %>
         </p>

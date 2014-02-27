@@ -5,6 +5,11 @@
       <li><%= link_to "Catalogue", catalogue_path %></li>
       <li><%= link_to "About", about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete, data: { confirm: "Are you sure you want to logout?" } %></li>
+      <% else %>
+        <li><%= link_to "Log In", new_user_session_path %></li>
+      <% end %>
     </ul>
   </div>
 </div>

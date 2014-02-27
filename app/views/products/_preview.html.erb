@@ -5,4 +5,17 @@
   <div class="product-name">
     <%= product.pname %>
   </div>
+  <% if user_signed_in? %>
+    <div class="product-pricing row">
+      <% if !current_user.is_international %>
+        <div class="col-md-6 local">
+          Php <%= product.price_local %> 
+        </div>
+      <% else %>
+        <div class="col-md-6 international">
+          $ <%= product.price_international %> 
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 </div>

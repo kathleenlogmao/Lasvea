@@ -18,16 +18,29 @@
     font-weight: bold;
    
   }
+
+  .product-pricing {
+    .local {
+      text-align: center;
+      background-color: orange;
+      color: #fff;
+    }
+    .international {
+      text-align: center;
+      background-color: orange;
+      color: #fff;
+    }
+  }
 }
 
 .product-image {
   background-color: white;
   -webkit-box-shadow: 0 0 10px #999;
-box-shadow: 0 0 10px #999;
--moz-border-radius: 6px;
--webkit-border-radius: 6px;
-padding: 10px;
-border-bottom-radius: 0px;
+  box-shadow: 0 0 10px #999;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  padding: 10px;
+  border-bottom-radius: 0px;
 }
 
 .cat-name {

@@ -1,9 +1,15 @@
 <div class="row cat">
   <div class="col-md-12 cat-name">
     <h1><%= @category.name %></h1>
-    <p><%= @category.description %></p>
-  <hr>
+    <hr>
+</div>
+<div class="row cat-name">
+  <div class="col-md-12">
+    <%= image_tag @category.banner.url, size: "930x350"%>
+    <p style="font-size: 24px;"><%= @category.description %></p>
+    <hr>
   </div>
+</div>
 </div>
 <% @products.each_slice(3) do |products| %>
   <div class="row">

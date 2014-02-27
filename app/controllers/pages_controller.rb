@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @products = Product.first(4)
+    @products = Product.where(is_featured: true).last(4)
   end
 
   def catalogue

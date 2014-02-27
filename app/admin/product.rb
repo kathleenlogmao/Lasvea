@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :pname, :description, :price_local, :price_international, :category_id, :picture
+  permit_params :pname, :description, :price_local, :price_international, :category_id, :picture, :is_featured
 
   index do
     selectable_column
@@ -15,10 +15,12 @@ ActiveAdmin.register Product do
   filter :category
   filter :price_local
   filter :price_international
+  filter :is_featured
 
   form do |f|
     f.inputs "Product Details" do
       f.input :pname, label: "Name"
+      f.input :is_featured
       f.input :category
       f.input :description
       f.input :price_local
