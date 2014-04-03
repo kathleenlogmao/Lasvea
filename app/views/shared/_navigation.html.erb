@@ -6,9 +6,17 @@
       <li><%= link_to "About", about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
       <% if user_signed_in? %>
-        <li><%= link_to "Logout", destroy_user_session_path, method: :delete, data: { confirm: "Are you sure you want to logout?" } %></li>
+        <li>
+        <%= link_to destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } do %>
+            <i class="glyphicon glyphicon-user"> </i>
+          <% end %>
+        </li>
       <% else %>
-        <li><%= link_to "Log In", new_user_session_path %></li>
+        <li>
+          <%= link_to new_user_session_path do %>
+            <i class="glyphicon glyphicon-lock"> </i>
+          <% end %>
+        </li>
       <% end %>
     </ul>
   </div>

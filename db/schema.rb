@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225092952) do
+ActiveRecord::Schema.define(version: 20140305080009) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -60,8 +60,8 @@ ActiveRecord::Schema.define(version: 20140225092952) do
   create_table "products", force: true do |t|
     t.string   "pname"
     t.text     "description"
-    t.decimal  "price_local",          precision: 10, scale: 10
-    t.decimal  "price_international",  precision: 10, scale: 10
+    t.decimal  "price_local",          precision: 4, scale: 2
+    t.decimal  "price_international",  precision: 4, scale: 2
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20140225092952) do
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
     t.boolean  "is_featured"
+    t.string   "code"
   end
 
   create_table "users", force: true do |t|

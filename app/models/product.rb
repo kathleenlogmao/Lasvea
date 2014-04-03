@@ -8,8 +8,13 @@ class Product < ActiveRecord::Base
   validates_attachment_content_type :picture, content_type: %w(image/jpeg image/jpg image/png)
 
   validates :pname, presence: true, uniqueness: true
+  validates :code, presence: true, uniqueness: true
   validates :price_local, presence: true
   validates :price_international, presence: true
   validates :category, presence: true
   validates :picture, presence: true
+
+  def to_s
+    "#{pname} (#{code})"
+  end
 end
