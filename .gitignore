@@ -16,3 +16,6 @@
 /tmp
 *.swp
 /public/*
+
+# Ignore vendor/bundle
+/vendor/bundle
