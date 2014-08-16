@@ -18,4 +18,14 @@ ActiveAdmin.register Category do
     end
     f.actions
   end
+
+  show do |item|
+    attributes_table do
+      row :name
+      row :description
+      row :picture do
+        image_tag item.banner.url
+      end
+    end
+  end
 end
