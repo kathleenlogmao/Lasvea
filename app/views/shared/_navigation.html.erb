@@ -8,13 +8,13 @@
       <% if user_signed_in? %>
         <li>
         <%= link_to destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } do %>
-            <i class="glyphicon glyphicon-user"> </i>
-          <% end %>
+          Customer Logout
+        <% end %>
         </li>
       <% else %>
         <li>
           <%= link_to new_user_session_path do %>
-            <i class="glyphicon glyphicon-lock"> </i>
+            Customer Login
           <% end %>
         </li>
       <% end %>
