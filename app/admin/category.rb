@@ -5,7 +5,7 @@ ActiveAdmin.register Category do
     selectable_column
     column :name
     column :description
-    default_actions
+    actions
   end
 
   filter :name

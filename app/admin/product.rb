@@ -9,7 +9,7 @@ ActiveAdmin.register Product do
     column :price_local
     column :price_international
     column :category
-    default_actions
+    actions
   end
 
   filter :pname, label: "Name"
