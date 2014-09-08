@@ -3,6 +3,6 @@ class ContactMailer < ActionMailer::Base
 
   def contact_information(contact_info)
     @contact_info = contact_info
-    mail(to: "raphael.alampay@gmail.com", subject: "Contact Info from #{@contact_info.name} (#{@contact_info.contact_number})", from: "sales@sugarplumglobal.com")
+    mail(to: "sugarplum.global@gmail.com", subject: "Contact Info from #{@contact_info.name} (#{@contact_info.contact_number})", from: "sales@sugarplumglobal.com")
   end
 end
