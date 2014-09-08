@@ -16,8 +16,10 @@
  *= require catalogues
  *= require products
  *= require magnific-popup
+ *= require notifications
  */
 
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 .landing-sub {

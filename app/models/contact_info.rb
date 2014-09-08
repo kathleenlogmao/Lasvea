@@ -1,10 +1,6 @@
-class ContactInfo
-  attr_accessor :name, :email, :contact_number, :message
-
-  def initialize(ci)
-    self.name = ci[:name]
-    self.email = ci[:email]
-    self.contact_number = ci[:contact_number]
-    self.message = ci[:message]
-  end
+class ContactInfo < ActiveRecord::Base
+  validates :name, presence: true
+  validates :email, presence: true
+  validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+  validates :content, presence: true
 end

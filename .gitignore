@@ -19,3 +19,6 @@
 
 # Ignore vendor/bundle
 /vendor/bundle
+
+# Create your own email config
+/config/initializers/setup_mail.rb

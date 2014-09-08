@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140305080009) do
+ActiveRecord::Schema.define(version: 20140908023649) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -55,6 +55,15 @@ ActiveRecord::Schema.define(version: 20140305080009) do
     t.string   "banner_content_type"
     t.integer  "banner_file_size"
     t.datetime "banner_updated_at"
+  end
+
+  create_table "contact_infos", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "contact_number"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "products", force: true do |t|

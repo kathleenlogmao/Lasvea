@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-7 contact">
+    <%= simple_form_for(@contact_info, method: :post, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :email %>
+      <%= f.input :contact_number, label: "Country" %>
+      <%= f.input :content, as: :text %>
+      <%= f.submit "Send", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+  <div class="col-md-5 postit">
+  <div class=""><b>E-mail:</b> <br>sugarplum.global@gmail.com </div> <br>
+  <div class=""><b>Address:</b><br> 3 Tanguile Street, Monte Vista Subdivision Marikina City, Philippines</div>
+  <br>
+  <p>
+    Upon sending us an inquiry, you will be
+    given a user account which you can use to
+    view our catalogue with prices and details
+    on how to order.
+  </p>
+   <%= image_tag ("cup.png") %>
+</div>
+</div>
